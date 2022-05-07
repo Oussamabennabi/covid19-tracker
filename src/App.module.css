@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.app {
+
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem;
+  gap: 1rem;
+  justify-content: space-around;
+	display: grid;
+	grid-template-areas:
+		'header header header header sidebar'
+		'cards cards cards cards  sidebar'
+		'map map map map sidebar';
+}
+
+@media screen and (max-width:764px) {
+  .app {
+    grid-template-areas:
+		'header header header header header'
+		'cards cards cards cards cards' 
+		'map map map map map'
+    'sidebar sidebar sidebar sidebar sidebar'
+		;
+  }
+  
+}

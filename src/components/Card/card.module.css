@@ -1,0 +1,17 @@
+.container {
+      min-width: calc(33.33% - .5rem) !important;
+}
+p:first-child {
+  font-size: 1.3rem;
+}
+p {
+  margin-top: .4rem !important;
+}
+p:last-child {
+  font-weight: bold;
+}
+@media screen and (max-width:764px) {
+  .container {
+    min-width: 100% !important;
+  }
+}

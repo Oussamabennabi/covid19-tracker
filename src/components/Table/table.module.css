@@ -1,0 +1,33 @@
+.container {
+  grid-area: sidebar;
+  min-width: 280px !important;
+  max-width: 280px !important;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+.table {
+  height: 400px !important;
+  overflow: auto;
+  margin: 1rem 0;
+}
+.tableBody tr:nth-child(n) {
+  background-color: rgba(0, 0, 0, .03);
+}
+.tableBody tr:nth-child(2n) {
+  background-color: rgba(0, 0, 0, .1);
+}
+.tableBody td {
+  padding: .4rem;
+
+}
+@media screen and (max-width:764px) {
+  .container {
+    grid-area: sidebar;
+    min-width: 100% !important;
+    max-width: auto !important;
+    margin-top: 3rem;
+  }
+  
+}
